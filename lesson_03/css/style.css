@@ -2,7 +2,10 @@
 /* НЕ МОЖУ ВИКОРИСТОВУВАТИ ЛИШЕ ВЛАСТИВІСТЬ Color тому, що взагалі статя виглядає ущербно, трішки додам властивостей хоча б для відступів, тому як використовувати постійно <br> - це буде ще + помилки та скріни в рецензії перевірки ДЗ */
 
 * {
-	background-color: black;
+	background: linear-gradient(black, #00005C);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	color: #BFBFBF;
 	text-align: center;
 }
@@ -45,12 +48,16 @@ img {
 .main__block li {
 	padding-top: 5px;
 	padding-bottom: 5px;
-	color: brown;
+	color: darkcyan;
 }
 
 .main__content {
 	padding-top: 30px;
 	padding-bottom: 20px;
+}
+
+.main__content ul > li {
+	text-decoration: underline;
 }
 
 .main__content ul li {
@@ -66,6 +73,11 @@ img {
 	padding-bottom: 10px;
 }
 
+.main__info__text2 ~ h2 {
+	color: red;
+	font-size: 30px;
+}
+
 .main__info__text6__list li {
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -79,14 +91,34 @@ img {
 	color: cadetblue;
 }
 
-.up {
+.button__up {
 	width: 100%;
 	display: inline-block;
 	text-align: left;
 	padding-left: 10px;
 	font-size: 20px;
-	text-decoration: underline;
 	color: aqua;
+}
+
+.block__bottom + .button .button__up {
+	color: white;
+}
+
+.block__bottom + .button .button__up:hover {
+	text-shadow: 0 0 20px white;
+}
+
+[class*=so] {
+	color: rgb(6, 6, 146);
+	font-size: 40px;
+}
+
+[href^="https:"] {
+	text-decoration: underline;
+}
+
+#title1, #title2, #title3, #title4 {
+	font-style: italic;	
 }
 
 /* ПРОШУ НЕ КРИТИКУВАТИ ЗА ДОДАТКОВІ ВЛАСТИВОСТІ, АДЖЕ ЯК НАПИСАНО В КОМЕНТАРІ НА ПОЧАТКУ, Я НЕ МОЖУ ДИВИТИСЬ НА ТУ СТАТТЮ, ЯКА ВИХОДИТЬ БЕЗ СЛІЗ ІЗ ВИКОРИСТАННЯМ ЛИШЕ ОДНІЄЇ ВЛАСТИВОСТІ color. Вибачаюсь та дякую за розуміння! */

@@ -1,0 +1,86 @@
+@import url("reset.css");
+/* НЕ МОЖУ ВИКОРИСТОВУВАТИ ЛИШЕ ВЛАСТИВІСТЬ Color тому, що взагалі статя виглядає ущербно, трішки додам властивостей хоча б для відступів, тому як використовувати постійно <br> - це буде ще + помилки та скріни в рецензії перевірки ДЗ */
+
+* {
+	background-color: black;
+	color: #BFBFBF;
+	text-align: center;
+}
+
+span {
+	display: inline-block;
+	width: 50%;
+	text-align: left;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+img {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.head{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.head h1 {
+	font-size: 40px;
+}
+
+.main__block {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.main__block li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: brown;
+}
+
+.main__content {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.main__content ul li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: cadetblue;
+}
+
+.main__info__title {
+	color: white;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.main__info__text6__list li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.block__bottom {
+	padding-bottom: 20px;
+}
+
+.block__bottom a {
+	color: cadetblue;
+}
+
+.up {
+	width: 100%;
+	display: inline-block;
+	text-align: left;
+	padding-left: 10px;
+	font-size: 20px;
+	text-decoration: underline;
+	color: aqua;
+}
+
+/* ПРОШУ НЕ КРИТИКУВАТИ ЗА ДОДАТКОВІ ВЛАСТИВОСТІ, АДЖЕ ЯК НАПИСАНО В КОМЕНТАРІ НА ПОЧАТКУ, Я НЕ МОЖУ ДИВИТИСЬ НА ТУ СТАТТЮ, ЯКА ВИХОДИТЬ БЕЗ СЛІЗ ІЗ ВИКОРИСТАННЯМ ЛИШЕ ОДНІЄЇ ВЛАСТИВОСТІ color. Вибачаюсь та дякую за розуміння! */

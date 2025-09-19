@@ -27,8 +27,14 @@ img {
 	padding-bottom: 20px;
 }
 
+.source {
+	font-size: 30px;
+	color: cadetblue;
+}
+
 .head h1 {
 	font-size: 40px;
+	padding-bottom: 20px;
 }
 
 .main__block {

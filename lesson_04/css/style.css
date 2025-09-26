@@ -1,0 +1,193 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+
+* {
+	background-color: #FDEFE6;
+	font-size: 16px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+body {
+	font-family: "Roboto", serif;
+	word-spacing: 10px;
+}
+
+body img { 
+	max-width: 100%;
+	vertical-align: middle;
+	margin-bottom: 20px;
+}
+
+body h2 {
+	font-size: 26px;
+	font-style: italic;
+}
+
+header div { 
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.head p {
+	padding-bottom: 10px;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: line-through;
+	text-decoration-color: red;
+}
+
+.head__title img {
+	margin-bottom: 40px;
+}
+
+.head__title h1{
+	font-family: "Praysire", serif;
+	font-size: 28px;
+	padding-bottom: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	text-shadow: 3px 3px 7px #BA936F;
+}
+
+.head__title h2 {
+	font-family: serif;
+	font-weight: 500;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+}
+
+.head__title + nav { 
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.head__nav-item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-shadow: 1px 1px 1px black;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-decoration-color: #BA936F;
+	text-decoration-thickness: 3px;
+	text-underline-offset: 4px;
+}
+
+.info h2 {
+	padding-bottom: 20px;
+}
+
+.info .info__block-text {
+	padding-bottom: 30px;
+	font-size: 18px;
+	line-height: 1.66;
+	letter-spacing: 2px;
+}
+
+.info__block-title {
+	text-decoration: underline;
+}
+
+.info__block-1, .info__block-2{ 
+	font-family: "Playfair", serif;
+	padding-bottom: 20px;
+	font-weight: 500;
+}
+
+.title-1 { 
+	text-decoration-style: wavy;
+	text-underline-offset: 7px;
+	text-decoration-color: #BA936F;
+}
+
+.info__block-text {
+	text-align: justify;
+}
+
+.title-2 {
+	text-decoration-style: dashed;
+	text-underline-offset: 7px;
+	text-decoration-color: #BA936F;
+}
+
+.text-2 p {
+	font-size: 20px;
+}
+
+.info__block-3 { 
+	font-family: "Oswald", serif;
+	padding-bottom: 20px;
+}
+
+.title-3 { 
+	text-decoration-style: double;
+	text-underline-offset: 7px;
+	text-decoration-color: #BA936F;
+}
+
+.info__block-4 {
+	font-family: "Merriweather", serif;
+}
+
+.title-4 { 
+	text-decoration-style: dotted;
+	text-underline-offset: 7px;
+	text-decoration-color: #BA936F;
+}
+
+.info__block-5 {
+	font-family: "Praysire", serif;
+	font-weight: 500;
+}
+
+.title-5 { 
+	text-decoration-style: solid;
+	text-underline-offset: 7px;
+	text-decoration-color: #BA936F;
+}
+
+.text-5 {
+	font-weight: 500;
+}
+
+.nav__bottom h2 {
+	text-align: center;
+	padding-bottom: 20px;
+	text-decoration: underline;
+	text-decoration-color: #BA936F;
+	text-underline-offset: 7px;
+	text-decoration-thickness: 3px;
+}
+
+.nav__bottom-links {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.nav__bottom-links a {
+	text-align: center;
+	text-decoration: overline;
+}
+
+.button {
+	padding-bottom: 20px;
+	text-align: right;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-decoration-color: #BA936F;
+	text-underline-offset: 7px;
+	text-decoration-thickness: 4px;
+}
+
+	.button a {
+		font-size: 20px;
+		font-weight: 500;
+	}

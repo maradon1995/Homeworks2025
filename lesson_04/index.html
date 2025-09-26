@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 4</title>
+	</head>
+	<body id="top">
+		<header class="head">
+			<div class="head__title">
+				<h1 class="head__title-main">Як змінюється роль фронтенд-розробника у 2025 році?</h1>
+				<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGlzMzV1OGdhOGV6NmZtdHhqdHhnZGxkdGlybGprN2phYTNicGh6ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif" alt="GIF, анімований кіт розробник програмує на фоні коду">
+				<p>скоро front end загнеться &#128512;</p>
+				<h2 class="head__title-sub">Основні теми статті:</h2>
+			</div>
+
+			<nav class="head__nav">
+				<ul class="head__nav-list">
+					<li class="head__nav-item"><a href="#block-1">Сучасні тренди та технології у
+							фронтенд-розробці</a></li>
+					<li class="head__nav-item"><a href="#block-2">Як інструменти із застосуванням ШІ
+							трансформують робочий процес</a></li>
+					<li class="head__nav-item"><a href="#block-3">Архітектурні підходи:
+							реактивність, компоненти, сигнали</a></li>
+					<li class="head__nav-item"><a href="#block-4">Автоматизація: від дизайну до
+							коду</a></li>
+					<li class="head__nav-item"><a href="#block-5">Висновки: що чекати фронтендерам у
+							найближчому майбутньому</a></li>
+							<li class="head__nav-item"><a href="#foot__links">Посилання на оригінальні джерела</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="info">
+			<div class="info__block-1" id="block-1">
+				<h2 class="info__block-title title-1">Сучасні тренди та технології у
+					фронтенд-розробці</h2>
+				<div class="info__block-text text-1">
+					<p>
+						• У 2025 році фронтенд рухається до того, щоб «відправляти менше
+						JavaScript.
+						у браузери», більше логіки переносити на сервер і оптимізувати завантаження
+						UI.
+					</p>
+					<p>
+						• Популярність «component libraries», як-от RadixUI чи shadcn/ui (на основі
+						Tailwind) зростає, оскільки вони забезпечують готові, доступні UI-блоки для
+						застосування.
+					</p>
+					<p>
+						• Прийоми типу серверного рендерингу (SSR), статичної генерації сторінок
+						(SSG), гібридних підходів (SSR + клієнтська гідратація) дедалі частіше
+						використовуються для покращення продуктивності й SEO.
+					</p>
+					<p>
+						• Сучасна реактивність і управління станом змінюються — нові підходи
+						(наприклад, сигнал-орієнтована архітектура) досліджуються як альтернатива
+						традиційним потокам подій.
+					</p>
+				</div>
+				<img src="img/Front-End-Trands.jpg" alt="Інфографіка, що ілюструє основні тенденції фронтенду 2020 року, включаючи нові технології та дизайни.">
+			</div>
+			<div class="info__block-2" id="block-2">
+				<h2 class="info__block-title title-2">Як інструменти зі ШІ трансформують робочий
+					процес</h2>
+				<div class="info__block-text text-2">
+					<p>
+						• Інструменти як GitHub Copilot, CodeGeeX та інші вже допомагають.
+						генерувати шаблонний код, автодоповнювати функції, прискорювати рутинні
+						частини роботи.
+					</p>
+					<p>
+						• Сучасні дослідження побудови UI з дизайну (UI-to-code) стають дедалі
+						точнішими — наприклад, рішення Prototype2Code, яке переводить прототип у
+						фронтенд-код з урахуванням адаптивного дизайну та читабельності коду.
+					</p>
+					<p>
+						• Поява DesignBench як бенчмарку для оцінки моделей ШІ у фронтенд-генерації
+						— врахування не лише генерування коду, але й редагування, виправлення
+						помилок у робочому процесі.
+					</p>
+				</div>
+				<img src="img/AI-instruments.png" alt="Мозок на п'єдесталі з яскравим синім світлом, що підкреслює його деталі та важливість.">
+			</div>
+			<div class="info__block-3" id="block-3">
+				<h2 class="info__block-title title-3">Архітектурні підходи: реактивність,
+					компоненти, сигнали</h2>
+				<div class="info__block-text text-3">
+					<p>
+						• Сигнал-орієнтована архітектура (Signal-First Architecture) пропонує
+						використовувати «сигнали» як найменші одиниці реактивності — зменшення
+						невизначеності у підписках, підвищена продуктивність.
+					</p>
+					<p>
+						• Використання кастомізованих вбудованих елементів HTML5 для компонування
+						складних UI і масштабованих дизайн-систем (custom built-in elements)
+						дозволяє робити компоненти нативними й більш гнучкими.
+					</p>
+					<p>
+						• Компонентний підхід залишається центром: UI будується як набір
+						ізолованих, повторно використовуваних блоків, з акцентом на доступність
+						(accessibility) та стандарти.
+					</p>
+				</div>
+				<img src="img/Front-end-components.jpg" alt="Основні компоненти архітектури фронтенду, включаючи структуру, технології та інструменти для розробки.">
+			</div>
+			<div class="info__block-4" id="block-4">
+				<h2 class="info__block-title title-4">Автоматизація: від дизайну до коду</h2>
+				<div class="info__block-text text-4">
+					<p>
+						• Перехід від чистого “ручного фронтенду” до сценаріїв, де частина
+						інтерфейсу «народжується» автоматично — із дизайну або шаблонів.
+					</p>
+					<p>
+						• Инструменти “linting” дизайну (аналіз макетів) використовуються, щоб вже
+						на етапі дизайну виявлялися проблеми, що потім призводять до «чистішого»
+						згенерованого коду.
+					</p>
+					<p>
+						• Автоматичне редагування, корекція та виправлення коду моделі ШІ — не
+						просто первинна генерація, але “цикл доопрацювання” у воркфлоу — як показує
+						DesignBench.
+					</p>
+				</div>
+				<img src="img/Front-end-design.png" alt="Користувач тримає планшет, на екрані якого розміщені різноманітні значки.">
+			</div>
+			<div class="info__block-5" id="block-5">
+				<h2 class="info__block-title title-5">Висновки: що чекати фронтендерам</h2>
+				<div class="info__block-text text-5">
+					<p>
+						• Фронтенд-розробка стає менш про “писати все вручну”, а більше про
+						керувати інструментами, налаштовувати автоматизацію і контролювати
+						результати.
+					</p>
+					<p>
+						• Тим, хто зможе освоїти як класичні технології (HTML, CSS, JavaScript),
+						так і нові парадигми (сигнали, архітектурні патерни, ШІ-інтеграція), буде
+						легше адаптуватися до змін.
+					</p>
+					<p>
+						• Акцент буде на якість — чистий код, хороша структура, доступність,
+						продуктивність — це те, що алгоритми поки що не можуть замінити повністю.
+					</p>
+					<p>
+						• Технічно складні задачі (реактивні графи, адаптивні UI, масштабовані
+						системи) залишаються людськими зонами відповідальності, тому роль
+						фронтендера стає ще більш “інтелектуальною”.
+					</p>
+				</div>
+				<img src="img/front-end-future.png" alt="Ілюстрація, що відображає майбутнє фронтенд-розробників, з акцентом на новітні технології та інструменти.">
+			</div>
+		</main>
+		<footer class="nav__bottom" id="foot__links">
+			<h2>Посилання на оригінальні джерела</h2>
+			<div class="nav__bottom-links">
+				<a target="_blank" href="https://www.netguru.com/blog/front-end-trends?utm_source=chatgpt.com">Netguru</a>
+				<a target="_blank" href="https://medium.com/%40ignatovich.dm/frontend-development-trends-in-2025-bef95f50aa2e">Medium</a>
+				<a target="_blank" href="https://arxiv.org/abs/2506.13815?utm_source=chatgpt.com">Arxiv</a>
+				<a target="_blank" href="https://dev.to/codewithshahan/the-future-of-frontend-developer-2025-54me?utm_source=chatgpt.com">DEV</a>
+				<a target="_blank" href="https://arxiv.org/abs/2311.16601?utm_source=chatgpt.com">Arxiv</a>
+				<a target="_blank" href="https://arxiv.org/abs/2405.04975?utm_source=chatgpt.com">Arxiv</a>
+				<a target="_blank" href="https://arxiv.org/abs/2506.06251?utm_source=chatgpt.com">Arxiv</a>
+			</div>
+			<div class="button">
+				<a href="#top">наверх</a>
+			</div>
+		</footer>
+	</body>
+</html>

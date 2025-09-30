@@ -60,14 +60,14 @@ h2 {
 	padding: 20px 0;
 }
 
-.site-header h1{
+.site-header p{
 	font-family: serif;
 	margin-bottom: 20px;
 	text-align: center;
 	font-size: 60px;
 }
 
-.site-header h1 span {
+.site-header p span {
 	text-transform: uppercase;
 	text-decoration: underline;
 	text-underline-offset: 7px;

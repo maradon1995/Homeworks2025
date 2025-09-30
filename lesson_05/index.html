@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 5</title>
+	</head>
+	<body>
+		<div class="wrapper" id="top">
+			<a class="go-up" href="#top">&uarr; наверх</a>
+			<header class="site-header">
+				<h1 class="title">Домашня робота №5. <span>Експеременти:</span></h1>
+				<nav class="main__nav">
+					<ul class="nav__list">
+						<li class="nav-item"><a href="#block1" class="nav__link">Внутрішні
+								відступи
+								"padding":</a></li>
+						<li class="nav-item"><a href="#block2" class="nav__link">Зовнішні відступи
+								"margin":</a></li>
+						<li class="nav-item"><a href="#block3" class="nav__link">Ширина блоку
+								"width":</a></li>
+						<li class="nav-item"><a href="#block4" class="nav__link">Висота блоку
+								"height":</a></li>
+						<li class="nav-item"><a href="#block5" class="nav__link">Властивість
+								"box-sizing":</a></li>
+						<li class="nav-item"><a href="#block6" class="nav__link">Властивість
+								"overflow":</a></li>
+						<li class="nav-item"><a href="#block7" class="nav__link">Властивість
+								"vertical-align":</a></li>
+						<li class="nav-item"><a href="#block8" class="nav__link">Властивість
+								"display":</a></li>
+						<li class="nav-item"><a href="#block9" class="nav__link">Центрування
+								блоку:</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main class="content">
+				<section class="container">
+					<div id="block1" class="container__info1">
+						<h2>Внутрішні відступи "padding":</h2>
+						<div>Властивість padding — це внутрішній відступ. Використовується для
+							відступів від кордону блоку всередину блоку (елементу), а не між блоками
+							(елементами). Значення можуть бути лише додатними, тобто більше або рівне
+							нулю.</div>
+						<span>Простими словами `padding` — це Відступи ВСЕРЕДИНІ
+							об'єкту, від кордонів об'єкта ДО ЙОГО КОНТЕНТУ. НЕ успадковується.
+							При вказанні значення у відсотках, відсоток береться від ширини
+							батьківського об'єкта, навіть для вертикальних відступів. НА ЦЕЙ ЕЛЕМЕНТ,
+							ЯКИЙ Є ТИПОМ "inline", внутрішній відступ зверху та знизу веде себе не
+							передбачувано!!!</span> <br>
+						<img src="img/developer.jpg"
+							alt="Чоловік у окулярах працює за комп'ютером, зосереджено дивлячись на екран.">
+					</div>
+					<div id="block2" class="container__info2">
+						<h2>Зовнішні відступи "margin":</h2>
+						<div>Властивість margin — Зовнішній відступ. Використовується для
+							відступів між блоками (елементами), рекомендується робити відступи зверху
+							вниз (margin-bottom) зліва на право. Значення можуть бути від'ємними! НЕ
+							успадковується.</div>
+						<span>Властивість "margin" має такі ж самі параметри, що і властивість
+							"padding". <span class="color">Правило: margin-top та margin-bottom на
+								inline елементи не діють, тому можна навіть і не вказувати</span></span>
+						<br>
+						<img src="img/developer.jpg"
+							alt="Чоловік у окулярах працює за комп'ютером, зосереджено дивлячись на екран.">
+					</div>
+					<div id="block3" class="container__info3">
+						<h2>Ширина блоку "width":</h2>
+						<p>Властивість width - чітко задає ширину блочного (блочно-рядкового)
+							об'єкту, НЕ працює з рядковими об'єктами</p>
+						<ul class="block3__list">
+							<li class="block3__item item1">
+								<p><span>auto</span> - (за замовченням) автоматичний розмір.</p>
+							</li>
+							<li class="block3__item item2">
+								<p>Властивість <span>max-width</span> – встановлює максимальну ширину
+									блочних
+									(блочно-рядкових) тегів, тобто блок не буде більшим за вказану ширину.
+									Не успадковується.</p>
+							</li>
+							<li class="block3__item item3">
+								<p>Властивість <span>min-width</span> — встановлює мінімальну ширину
+									блочних
+									(блочно-рядкових) тегів, тобто блок не буде меншим за вказану ширину.
+									Не успадковується.</p>
+							</li>
+						</ul>
+					</div>
+					<div id="block4" class="container__info4">
+						<h2>Висота блоку "height":</h2>
+						<p>Властивість height — встановлює чітку висоту блочних (блочно-рядкових)
+							тегів. Не успадковується. НЕ працює з рядковими об'єктами</p>
+						<ul class="block4__list">
+							<li class="block4__item item1">
+								<p><span>auto</span> - (за замовченням) автоматичний розмір.</p>
+							</li>
+							<li class="block4__item item2">
+								<p>Властивість <span>max-height</span> — встановлює максимальну висоту
+									блочних (блочно-рядкових) тегів, тобто блок не буде більшим за вказану
+									висоту. Не успадковується.</p>
+							</li>
+							<li class="block4__item item3">
+								<p>Властивість <span>min-height</span> — встановлює мінімальну висоту
+									блочних (блочно-рядкових) тегів, тобто блок не буде меншим за вказану
+									висоту. Не успадковується.</p>
+							</li>
+						</ul>
+					</div>
+					<div id="block5" class="container__info5">
+						<h2>Властивість "box-sizing":</h2>
+						<p>Властивість <span>`box-sizing`</span> Застосовується для зміни
+							алгоритму обчислення величин. Значення властивості:</p>
+						<ul class="block5__list">
+							<li class="block5__item"><span>content-box</span> - (за замовченням)
+								додає відступи до розміру об'єкта;</li>
+							<li class="block5__item"><span>border-box</span> - значення розмірів
+								враховують відступи.</li>
+						</ul>
+						<p class="important"><span>ВАЖЛИВО!</span> Видалення фантомних відступів
+							між елементами.</p>
+						<div class="block5__inf-bottom">
+							Для батьківського елементу вказуємо font-size: 0; це прибере фантомний
+							відступ між елементами яким вказано display: inline-block; а для дочірніх
+							елементів потрібно вказати відповідний розмір шрифту, приклад font-size:
+							16px;
+						</div>
+					</div>
+					<div id="block6" class="container__info6">
+						<h2>Властивість "overflow":</h2>
+						<p>Властивість <span>overflow</span> — керує відображенням контенту блочного елементу. Не успадковується.</p>
+						<ul class="block6__list">
+							<li class="block6__item item1"><span>visible</span> — відображається увесь контент елемента, навіть за межами встановлених розмірів (за замовченням);</li>
+							<li class="block6__item item2"><span>hidden</span> — відображається тільки контент всередині (блоку) елемента, все інше буде сховано; Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано Сховано </li>
+							<li class="block6__item item3"><span>scroll</span> — завжди додаються смужки прокрутки; Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка Прокрутка </li>
+							<li class="block6__item item4"><span>auto</span> — смужки прокрутки додаються лише за необхідністю (якщо контент не вміщується всередині вказаних розмірів блоку). <br> Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент Контент </li>
+						</ul>
+					</div>
+					<div id="block7" class="container__info7">
+						<h2>Властивість "vertical-align":</h2>
+						<p>Властивість <span>vertical-align</span> — керує вирівнюванням блочно-рядкових та рядкових елементів по вертикалі (осі - Y)  Не успадковується.</p>
+						<div class="block7__top">
+							<div class="block7__content">
+								<p><span>top</span> — вирівнює по верхньому краю</p>
+							</div>
+						</div>
+						<div class="block7__middle">
+							<div class="block7__content">
+								<p><span>middle</span> — вирівнює по центру.</p>
+							</div>
+						</div>
+						<div class="block7__bottom">
+							<div class="block7__content">
+								<p><span>bottom</span> — вирівнює по нижньому краю</p>
+							</div>
+						</div>
+					</div>
+					<div id="block8" class="container__info8">
+						<h2>Властивість "display":</h2>
+						<span class="sub">Властивість <span>display</span> — багатоцільова властивість яка задає глобальні параметри тегу, не успадковується.</span>
+						<span class="block"><span>block </span>— елемент відображається як блочний (встановлено за замовченням для блочних об'єктів);</span>
+						<span class="inline"><span>inline</span> — елемент відображається як рядковий (встановлено за замовченням для рядкових об'єктів);</span> <br>
+						<span class="inline-block"><span>inline-block</span> — елемент відображається як рядковий, але з можливістю використання усіх CSS-властивостей (блочно-рядковий);</span>
+						<span class="none">Щоб тут не було написано, всеодно з display: none; ти мене не будеш бачити, до поки я того не схочу. Навіть не буду стилізувати хе-хе-хе І взагалі, не грайся а огорни мене в дівчик якийсь там.</span>
+					</div>
+					<div id="block9" class="container__info9">
+						<h2>Центрування блоку:</h2>
+						<div class="center-block">
+							<ul class="center-list">
+								<li class="center-item">Об'єкт має бути блочним</li>
+								<li class="center-item">Об'єкт має мати меншу ширину за батьківський елемент</li>
+								<li class="center-item">Додаємо властивість margin: 0 auto;</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section class="why-choose-us">
+					<div class="why__container">
+						<div class="why__text">
+							<h1>WHY CHOOSE US?</h1>
+						</div>
+						<div class="why__info">
+							<div class="why__items top">
+								<div class="why__item">
+									<img src="img/planet.svg" alt="planet">
+									<h3>GLOBAL DELIVERY</h3>
+									<p>Experience Hassle-Free Shipping and Seamless Global Connectivity with Our Trustworthy and Efficient Delivery Service, Bringing the World to Your Fingertips!</p>
+								</div>
+								<div class="why__item item2">
+									<img src="img/box.svg" alt="box">
+									<h3>FREE SHIPPING</h3>
+									<p>Shop to Your Heart's Content Without Worrying About Shipping Costs: Our Free Shipping Service Delivers Your Purchases with a Smile, Straight to Your Doorstep!</p>
+								</div>
+								<div class="why__item">
+									<img src="img/phone.svg" alt="phone">
+									<h3>24/7 SUPPORTING</h3>
+									<p>Shop with Confidence Anytime, Anywhere: Our Free Shipping Service Comes with 24/7 Support to Ensure Your Packages Arrive Safely and On Time!</p>
+								</div>
+							</div>
+							<div class="why__items bottom">
+								<div class="why__item">
+									<img src="img/email.svg" alt="email">
+									<h3>DAILY EMAIL</h3>
+									<p>Stay Up-to-Date with Your Deliveries: Enjoy the Convenience of Daily Email Updates with Our Free Shipping Service, Making Your Online Shopping Experience Even More Enjoyable!</p>
+								</div>
+								<div class="why__item">
+									<img src="img/credit-card.svg" alt="credit-cards">
+									<h3>EASY PAYMENT</h3>
+									<p>Shop and Pay with Ease: Our Free Shipping Service Not Only Delivers Your Packages for Free, but Also Offers Easy Payment Options, Making Your Shopping Experience a Breeze!</p>
+								</div>
+								<div class="why__item">
+									<img src="img/badge.svg" alt="badge">
+									<h3>MONTHLY  VOUCHER</h3>
+									<p>More Than Just Free Shipping: Our Service Rewards Your Loyalty with Monthly Vouchers, Giving You More Reasons to Shop and Save on Your Favorite Products!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer>
+				<div class="footer">
+					<p>© Developed by Denis Fritsler</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -18,10 +18,9 @@ body {
 }
 
 .wrapper {
-	position: relative;
 	font-family: serif;
 	max-width: 1440px;
-	margin: 0 200px 0;
+	margin: 0 auto;
 	background-color: #748dc5;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -60,11 +59,12 @@ h2 {
 	padding: 20px 0;
 }
 
-.site-header p{
-	font-family: serif;
+.site-header p {
 	margin-bottom: 20px;
 	text-align: center;
 	font-size: 60px;
+	color:  #00fff0;
+	text-shadow: 1px 1px 5px black;
 }
 
 .site-header p span {
@@ -109,6 +109,9 @@ h2 {
 }
 
 .container__info1 img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
 	padding: 20px 0 20px 0;
 }
 
@@ -132,6 +135,9 @@ h2 {
 }
 
 .container__info2 img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }

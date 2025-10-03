@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 6</title>
+	</head>
+	<body>
+		<div class="wrapper" id="up">
+			<a class="button_up" href="#up">наверх</a>
+			<header class="site-header">
+				<div class="site-header__title">
+					<p>Домашня робота №6 -  <br><span>Експеременти</span></p>
+				</div>
+				<div class="site-header__nav">
+					<ul class="site-header__items">
+						<li class="site-header__item">
+							<a href="#block1">Властивість <span>"border":</span></a>
+						</li>
+						<li class="site-header__item">
+							<a href="#block3">Властивість <span>"outline":</span></a>
+						</li>
+						<li class="site-header__item">
+							<a href="#block4">Властивість <span>"border-radius":</span></a>
+						</li>
+						<li class="site-header__item">
+							<a href="#block5">Властивість <span>"box-shadow":</span></a>
+						</li>
+						<li class="site-header__item">
+							<a href="#block6">Властивість <span>"opacity":</span> та <span>"visibility:"</span></a>
+						</li>
+						<li class="site-header__item">
+							<a href="#block7">Властивість <span>"background":</span></a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<main class="info">
+				<div class="info__block block1" id="block1">
+					<h2>Властивість <span>"border:"</span></h2>
+					<p>Унаверсальна властивість встановлює товщину, стиль та колір границі навколо елемента. <span>"Не успадковується".</span> Синтаксис - border: 5px solid black, де 5px - ширина border, solid - стиль, black - колір.</p>
+					<ul class="info__block-items">
+						<li class="info__block-item block1__item1"><span>solid</span> - звичайна пряма лінія без крапок чи штрихів</li>
+						<li class="info__block-item block1__item2"><span>dotted</span> - точкова (крапкова) лінія.</li>
+						<li class="info__block-item block1__item3"><span>dashed</span> - пунктирна лінія</li>
+						<li class="info__block-item block1__item4"><span>double</span> - подвійна суцільна лінія (майже ніколи не використовується)</li>
+					</ul>
+					<p>На inline типи властивість діє непередбачувано.</p>
+				</div>
+
+				<div class="info__block block2" id="block2">
+					<h2>Одностороннє використання <span>"border:"</span></h2>
+					<ul class="info__block-items">
+						<li class="info__block-item block2__item1"><span>border-left</span> - border зліва</li>
+						<li class="info__block-item block2__item2"><span>border-right</span> - border справа</li>
+						<li class="info__block-item block2__item3"><span>border-top</span> - border зверху</li>
+						<li class="info__block-item block2__item4"><span>border-bottom</span> - border внизу</li>
+					</ul>
+				</div>
+
+				<div class="info__block block3" id="block3">
+					<h2>Властивість <span>"outline:"</span></h2>
+					<p>Унаверсальна властивість встановлює товщину, стиль та колір обводки навколо елемента. <span>"Не успадковується".</span> Відмінність від <span>"border"</span> в тому, що він обводить елемент ззовні, а не працює, як бордер і не стискає елемент в середині батьківського. Значення ідентичні властивості <span>"border".</span> Також <span>"outline"</span> не може використовуватись на якусь окрему сторону елемента. Синтаксис - outline: 1px solid black, де 5px - ширина border, solid - стиль, black - колір. </p>
+					<ul class="info__block-items">
+						<li class="info__block-item block3__item1"><span>solid</span></li>
+						<li class="info__block-item block3__item2"><span>dotted</span></li>
+						<li class="info__block-item block3__item3"><span>dashed</span></li>
+						<li class="info__block-item block3__item4"><span>double</span></li>
+					</ul>
+					<p><span>outline-offset: 10px;</span> - збільшує зовнішню відстань самої лінії від елемента на вказану кількість пікселів.</p>
+				</div>
+
+				<div class="info__block block4" id="block4">
+					<h2>Властивість <span>"border-radius:"</span></h2>
+					<p>Властивість border-radius — встановлює радіус заокруглення кутів блоку. <span>"Не успадковується".</span> Посилання на генератор фігур за допомогою border-radius</p>
+					<a href="https://10015.io/tools/css-border-radius-generator" target="_blank">тицяй тут ...</a>
+					<ul class="info__block-items">
+						<li class="info__block-item block4__item1">Синтаксис -  border-radius: 50%;<span></span></li>
+					</ul>
+					<p>Приклад, як в css зробити коло за допомогою <span>border-radius:</span></p>
+					<div class="example">
+						<div class="example__code">
+							<p>.circle {<br>
+										border-radius: 50%;<br>
+										width: 100px;<br>
+										height: 100px;<br>
+										background-color: #794f45;<br>
+									}</p>
+						</div>
+						<div class="example__circle"></div>
+					</div>
+				</div>
+
+				<div class="info__block block5" id="block5">
+					<h2>Властивість <span>"box-shadow:"</span></h2>
+					<p>Властивість box-shadow — додає тінь до елементу.  <span>"Не успадковується".</span> Вона може бути як і зовні об’єкту, так і всередині.  Синтаксис - box-shadow: 1px 1px 5px black, де 1px - ширина по горизонталі, 1px - ширина по вертикалі, 5px - ширина розсіювання тіні,  black - колір.</p>
+					<div class="example">
+						<p>приклад:</p>
+						<div class="example__code">
+							<span>
+								box-shadow : 1px 1px 5px black;
+							</span>
+						</div>
+						<div class="example__block"></div>
+					</div>
+				</div>
+
+				<div class="info__block block6" id="block6">
+					<h2>Властивість <span>"opacity:"</span> та <span>"visability:"</span></h2>
+					<p>Властивість opacity — встановлює рівень прозорості елемента. <span>"Не успадковується".</span></p>
+					<ul class="info__block-items">
+						<li class="info__block-item block6__item1">0 — повна прозорість; <span>мене не видно</span></li>
+						<li class="info__block-item block6__item2">1 — повна непрозорість (за замовченням);</li>
+						<li class="info__block-item block6__item3">0.5 — прозорість 50%.</li>
+					</ul>
+					<p>Властивість visibility — управляє відображенням елемента.</p>
+					<ul class="info__block-items">
+						<li class="info__block-item block6__item4">visible —  відображає об'єкт (за замовченням);</li>
+						<li class="info__block-item block6__item5">hidden — ховає об'єкт (з об'єктом не можна взаємодіяти).</li>
+					</ul>
+				</div>
+
+				<div class="info__block block7" id="block7">
+					<h2>Властивість <span>"background:"</span> тут прям дуже багато інфи</h2>
+					<ul class="info__block-items">
+						<li class="info__block-item block7__item1">Властивість background-color встановлює колір фону елемента:</li>
+						<li class="info__block-item block7__item2">Властивість background-image встановлює фонове зображення елемента або задати градієнтну заливку:</li>
+					</ul>
+					<h2>Властивість <span>background-repeat</span> визначає як повторюватиметься фонове зображення</h2>
+					<ul class="info__block-items">
+						<li class="info__block-item block7__item3">background-repeat: repeat; — за замовченням (зображення повторюється для заповнення блоку);</li>
+						<li class="info__block-item block7__item4">background-repeat: no-repeat; — не повторювати (зображення не повторюється для заповнення блоку);</li>
+						<li class="info__block-item block7__item5">background-repeat: repeat-x; — повторювати по горизонталі (зображення повторюється лише по горизонталі для заповнення блоку);</li>
+						<li class="info__block-item block7__item6">background-repeat: repeat-y; — повторювати по вертикалі (зображення повторюється лише по вертикалі для заповнення блоку).</li>
+					</ul>
+					<h2>Властивість <span>background-position</span> задає початкове положення фонового зображення</h2>
+					<p><span>background-position: 0 0;</span> перше значення — розташування по горизонталі (значення може бути у відсотках, px, словом), друге значення — по вертикалі.</p>
+					<ul class="info__block-items">
+						<li class="info__block-item block7__item7">0 0 (або left top) — за замовченням (зображення буде починатись з верхнього лівого кута блоку);</li>
+						<li class="info__block-item block7__item8">center (або 50%) — центрує зображення посередині блоку; Так само із іншими позиціями, такими як: top, left, bottom, right</li>
+					</ul>
+					<h2>Властивість <span>background-attachment</span> встановлює чи прокручуватиметься фонове зображення разом із вмістом елемента background-attachment: scroll;</h2>
+					<ul class="info__block-items">
+						<li class="info__block-item block7__item9">scroll — скролиться разом з блоком (за замовченням); <br> Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі Преходь на темну сторону, у нас є піченькі </li>
+						<li class="info__block-item block7__item10">fixed — фонове зображення НЕ скролиться разом з блоком (позиціонується відносно в'юпорту, а не відносно блоку). Приклад fixed можете подивитись на сторінці InDes - We design your room aesthetic його використано для фонових картинок секцій</li>
+					</ul>
+					<h2>Властивість <span>background-size</span> масштабує фонове зображення згідно з заданими розмірами у цифрах</h2>
+					<ul class="info__block-items">
+						<li class="info__block-item block7__item11">background-size: auto auto; — за замовчуванням. Зображення збільшиться відповідно наповненості блоку.</li>
+						<li class="info__block-item block7__item12">background-size: auto 100px;</li>
+						<li class="info__block-item block7__item13">background-size: contain;</li>
+						<li class="info__block-item block7__item14">Можемо написати тільки ширину, і висота підтягнеться автоматично та пропорційно: background-size: 300px;</li>
+					</ul>
+					<h2><span>ВАЖЛИВО!</span> Спеціальні значення contain та cover:</h2>
+					<ul class="info__block-items">
+						<li class="info__block-item block7__item15">contain — масштабує зображення таким чином, щоб картинка повністю помістилася всередину блоку. Тобто по найменшій частині картинки (висота, якщо зображення горизонтальне, або ширина). Підходить для фотографій та карток товарів.</li>
+						<li class="info__block-item block7__item16">cover — масштабує зображення так, щоб воно зайняло увесь блок (тому частину ми не будемо бачити). Тобто по найбільшої частини картинки. Підходить для фонових зображень які не несуть в собі конкретної інформації, а використовуються для декору та підкреслення основної інформації (контенту).</li>
+					</ul>
+					<h2>Властивість <span>background-clip</span> Налаштовує поведінку фонового зображення разом з межею border та текстом</h2>
+					<div class="clip"><span class="clip__text">background-clip: text; - властивість CSS використовується для застосування фону (кольору, градієнта або зображення) до текстового вмісту елемента, а не до всього елемента. Це створює візуально привабливі ефекти, такі як текст із градієнтним заповненням.</span></div>
+					<div class="block7__footer">
+						<div class="arrow-right"></div>
+						<a class="block7__link" target="_blank" href="design.html"><p>Посилання на верстку окремих блоків</p></a>
+						<div class="arrow-left"></div>
+					</div>
+				</div>
+				
+			</main>
+
+			<footer class="footer-info">
+				<div class="footer-info__text">
+					<p>Directed by Denis Fritsler</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

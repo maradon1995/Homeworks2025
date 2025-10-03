@@ -1,0 +1,473 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(
+    348deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 23, 23, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.wrapper {
+	position: relative;
+  margin: 0 auto;
+  max-width: 1440px;
+  background: linear-gradient(
+    142deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(229, 35, 35) 100%
+  );
+  color: #fff;
+  box-shadow: 1px 1px 10px #170303;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.button_up {
+	position: fixed;
+	font-size: 26px;
+	right: 30px;
+	bottom: 20px;
+	text-transform: uppercase;
+	border-bottom: 2px solid white;
+	text-shadow: 3px 1px 5px #170303;
+	transition: all 0.3s;
+}
+
+.button_up:hover {
+	font-size: 27px;
+	color: #d13030;
+	border-bottom: 3px solid #d13030;
+	text-shadow: 3px 1px 5px #170303;
+}
+
+/* Шапка сайту header ================================================================================================================================================================================================================================ */
+
+.site-header {
+	margin-bottom: 40px;
+}
+
+.site-header__title {
+	background-image: url(../img/mini-darth-vader.png);
+	background-position: center;
+  padding: 20px 0;
+	height: 200px;
+  font-size: 26px;
+  text-align: center;
+	text-shadow: 1px 1px 2px #170303;
+}
+
+.site-header__title span {
+  display: inline-block;
+  margin-top: 20px;
+  color: #ff3b3b;
+  text-shadow: 2px 2px 6px #170303;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.site-header__items {
+  padding: 20px 40px;
+  background-image: linear-gradient(
+    142deg,
+    rgba(191, 41, 41, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+	border-top: 5px solid #ff3b3b;
+	border-bottom: 5px solid #ff3b3b;
+}
+
+
+.site-header__item {
+	padding: 5px 0;
+	list-style: dec;
+	font-size: 18px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	font-weight: 500;
+} 
+
+.site-header__item a {
+	display: inline;
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 5px;
+	transition: color 0.3s;
+}
+
+.site-header__item a:hover {
+	color: #170303;
+	font-weight: 600;
+	text-shadow: 1px 1px 2px #ff3b3b;
+}
+
+/* Сторінка main з інформацією ================================================================================================================================================================================================================================ */
+
+/* Загальні стилі ================================================================================================================================================================================================================================ */
+
+.info__block {
+	padding: 20px;
+	font-size: 18px;
+	line-height: 1.5;
+	border-bottom: 10px solid #170303;
+}
+
+.info__block h2 { 
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 26px;
+	font-weight: 600;
+	text-shadow: 1px 1px 3px #170303;
+}
+
+.info__block h2 span {
+	color: #ff3b3b;
+}
+
+.info__block p {
+	padding: 20px 0;
+}
+
+.info__block p span {
+	color: #c3ff00;
+}
+
+.info__block-items {
+	padding: 0 20px;
+}
+
+.info__block-item {
+	list-style-type: disc;
+	padding-left: 10px;
+	margin: 10px 0;
+	background-color: #d13030;
+}
+
+/* BLOCK 1 ================================================================================================================================================================================================================================ */
+
+.block1__item1 {
+	padding: 5px;
+	border: 5px solid #170303;
+}
+
+.block1__item2 {
+	padding: 5px;
+	border: 5px dotted #170303;
+}
+
+.block1__item3 {
+	padding: 5px;
+	border: 5px dashed #170303;
+}
+
+.block1__item4 {
+	padding: 5px;
+	border: 5px double #170303;
+}
+
+/* BLOCK 2 ================================================================================================================================================================================================================================ */
+
+.block2__item1 {
+	border-left: 10px solid #170303;
+}
+
+.block2__item2 {
+	border-right: 7px dotted #170303;
+}
+
+.block2__item3 {
+	border-top: 5px dashed #170303;
+}
+
+.block2__item4 {
+	border-bottom: 5px double #170303;
+}
+
+/* BLOCK 3 ================================================================================================================================================================================================================================ */
+
+.block3__item1 {
+	outline: 10px solid #170303;
+}
+
+.block3__item2 {
+	outline: 10px dotted #333232;
+}
+
+.block3__item3 {
+	outline: 10px dashed #6c6c6c;
+}
+
+.block3__item4 {
+	outline: 10px double #170303;
+}
+
+/* BLOCK 4 ================================================================================================================================================================================================================================ */
+
+.block4 p {
+	margin-bottom: -20px;
+}
+
+.block4 a {
+	text-transform: uppercase;
+	color: #c3ff00;
+	transition: all 0.3s;
+	padding: 15px 0;
+}
+
+.block4 a:hover {
+	color: #c3ff00;
+	margin-left: 20px;
+	text-shadow: 1px 1px 3px #170303;
+	transform: scale(1.2); 
+}
+
+.example {
+	text-align: center;
+}
+
+.example__code {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.block4 .example .example__circle {
+	display: inline-block;
+	border-radius: 50%;
+	border: 2px solid #170303;
+	width: 100px;
+	height: 100px;
+	background-color: #ff3b3b;
+	margin-left: 1px;
+	vertical-align: middle;
+}
+
+/* BLOCK 5 ================================================================================================================================================================================================================================ */
+
+.block5 .example {
+	text-transform: uppercase;
+	color: #c3ff00;
+}
+
+.block5 .example .example__code {
+	display: inline-block;
+	color: white;
+	font-size: 20px;
+	text-shadow: 3px 1px 5px #170303;
+	margin-bottom: 20px;
+}
+
+.block5 .example .example__block { 
+	display: inline-block;
+	color: white;
+	width: 100px;
+	min-height: 200px;
+	margin-bottom: 20px;
+	background-color: #ff3b3b;
+	margin-left: 10px;
+	vertical-align: middle;
+	box-shadow: 8px 3px 5px #170303;
+	border-radius: 20px;
+}
+
+/* BLOCK 6 ================================================================================================================================================================================================================================ */
+
+.block6__item1 span{
+	opacity: 0;
+}
+
+.block6__item2 {
+	opacity: 1;
+}
+
+.block6__item3 {
+	opacity: 50%;
+}
+
+
+
+/* BLOCK 7 ================================================================================================================================================================================================================================ */
+
+.block7__item1 {
+	background-color: #ff0101;
+}
+
+.block7__item2 { 
+	background-image: linear-gradient(142deg,rgba(255, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.block7__item3 {
+	background-image: url(../img/mini-darth-vader.png);
+	height: 200px;
+}
+
+.block7__item4 {
+	background-image: url(../img/mini-darth-vader.png);
+	height: 200px;
+	background-repeat: no-repeat;
+}
+
+.block7__item5 {
+	background-image: url(../img/mini-darth-vader.png);
+	height: 400px;
+	background-repeat: repeat-x;
+}
+
+.block7__item6 {
+	background-image: url(../img/mini-darth-vader.png);
+	height: 400px;
+	background-repeat: repeat-y;
+}
+
+.block7__item7 {
+	background-image: url(../img/mini-darth-vader.png);
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.block7__item8 {
+	background-image: url(../img/mini-darth-vader.png);
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.block7__item9 {
+	background-image: url(../img/big-darth-vader.jpg);
+	min-height: 1000px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+}
+
+.block7__item10 {
+	background-image: url(../img/dart-vader-second.jpeg);
+	min-height: 1000px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.block7__item11 {
+	background-image: url(../img/darth-vader-600px.jpg);
+	height: 700px;
+}
+
+.block7__item12 {
+	background-image: url(../img/darth-vader-600px.jpg);
+	height: 700px;
+	background-size: auto 100px;
+	background-repeat: no-repeat;
+}
+
+.block7__item13 {
+	background-image: url(../img/darth-vader-600px.jpg);
+	height: 700px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.block7__item14 {
+	background-image: url(../img/darth-vader-600px.jpg);
+	height: 700px;
+	background-repeat: no-repeat;
+	background-size: 300px;
+}
+
+.block7__item15 {
+	background-image: url(../img/darth-vader-600px.jpg);
+	height: 700px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.block7__item16 {
+	background-image: url(../img/darth-vader-600px.jpg);
+	height: 700px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.clip {
+	background-color: #7d0f0f;
+	padding-left: 10px;
+}
+
+.clip__text {
+	background-image: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+	background-clip: text;
+	color: transparent;
+	font-size: 30px;
+}
+
+.block7__footer {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.block7__footer .arrow-right {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 150px solid #ff0000;
+	border-bottom: 25px solid transparent;
+	margin-right: 50px;
+	vertical-align: middle;
+}
+
+.block7__link {
+	vertical-align: middle;
+	font-size: 26px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-decoration-thickness: 3px;
+	text-underline-offset: 10px;
+	text-decoration-color: #fff;
+	color: #ff3b3b;
+	text-shadow: 3px 1px 5px #170303;
+	transition: all 0.3s;
+}
+
+.block7__link:hover {
+	color: #fff;
+	transform: scale(1.1);
+}
+
+.block7__footer .arrow-left {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 150px solid #ff0000;
+	border-bottom: 25px solid transparent;
+	margin-left: 50px;
+	vertical-align: middle;
+}
+
+
+/* FOOTER ================================================================================================================================================================================================================================ */
+
+.footer-info {
+	padding: 30px 0;
+}
+
+.footer-info__text {
+	background-color: #7d0f0f;
+	font-size: 30px;
+	text-align: center;
+	padding: 45px 0;
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+}

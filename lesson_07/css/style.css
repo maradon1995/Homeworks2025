@@ -1,0 +1,308 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("scared.css");
+@import url("game.css");
+@import url("win.css");
+@import url("design.css");
+
+body {
+  background-color: #000;
+  color: #fff;
+	background-image: url(../img/Saw-main-logo.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* HEADER STYLE ============================================== */
+
+.head {
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+.head__title {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 40px;
+}
+
+.head__list {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(81, 79, 79, 0.5);
+  padding: 15px;
+  border: 2px solid #c00a2f;
+  box-shadow: 3px 1px 8px #c00a2f;
+  text-shadow: 1px 1px 5px black;
+
+  border-radius: 20px;
+}
+
+.head__items > * {
+  margin-bottom: 20px;
+}
+
+.head__item {
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.head__item a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: #c00a2f;
+  transition: width 0.5s;
+}
+
+.head__item a:hover::after {
+  width: 100%;
+}
+
+.head__item:hover {
+  color: #c00a2f;
+}
+
+.head__items > *:last-child {
+  margin-bottom: 0;
+}
+
+.game {
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: #c00a2f;
+  border-radius: 10px;
+}
+
+.game:hover {
+  color: #000;
+  transform: scale(1.1);
+  margin-left: 15px;
+}
+
+.game a:hover::after {
+  width: 0;
+}
+
+/* MAIN STYLE ============================================== */
+
+.info__block {
+	background-color: rgba(81, 79, 79, 0.5);
+  background-image: url(../img/Saw_movie_logo.png);
+  background-position: center;
+  background-size: contain;
+  box-shadow: 1px 1px 10px #c00a2f;
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+  padding: 15px 15px 20px 15px;
+	border-radius: 10px;
+}
+
+.info__block h2 {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #c00a2f;
+  font-size: 30px;
+  text-decoration: underline;
+  border-radius: 10px;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+
+.info__items {
+	display: block;
+	text-align: center;
+}
+
+.info__item {
+	background-color: #c00a2f;
+	border: 1px solid #000;
+  border-radius: 10px;
+	letter-spacing: 2px;
+	margin-right: 30px;
+	margin-bottom: 10px;
+  font-size: 25px;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+@media (max-width: 767.98px) {
+	.info__block  {
+		text-align: center;
+	}
+
+	.info__item {
+		margin-right: 0;
+	}
+}
+
+.info__item:last-child {
+	margin-right: 0;
+}
+
+.info__item--hover:hover {
+  background-color: #7d081f;
+}
+
+.info__item--hover:hover:nth-child(2) {
+  text-decoration: underline;
+}
+.info__item--hover:hover:nth-child(3) {
+	transform: scale(1.1);
+}
+
+.info__item--visited:visited {
+  color: #220208;
+}
+
+.info__item--focus:focus {
+	outline: 5px solid #c00a2f;
+	outline-offset: 5px;
+}
+
+.info__item--focus:focus-visible:last-child {
+	outline: 5px dotted #ff0033;
+	outline-offset: 5px;
+}
+
+#section-01:target {
+	color: #000;
+}
+#section-02:target {
+	font-size: 50px;
+}
+#section-03:target {
+	background-color: #ff0033;
+	opacity: 0.7;
+}
+
+#section-04:target {
+	display: none;
+}
+
+.info__item--first-child p, .info__item--last-child p, .info__item--last-nth p { 
+	display: inline-block;
+}
+
+.info__item--first-child a:first-child {
+	padding: 25px;
+}
+
+.info__item--first-child p:first-of-type {
+	background-color: #220208;
+	color: #7d081f;
+	outline: 2px solid #ff0033;
+}
+
+.info__item--last-child p:last-of-type {
+		padding: 25px;
+}
+
+.info__item--last-child a:last-child{
+	background-color: #220208;
+	color: #7d081f;
+	outline: 2px solid #ff0033;
+}
+
+.info__item--last-nth a:nth-child(3) {
+	background-color: #220208;
+	color: #7d081f;
+	outline: 2px solid #ff0033;
+}
+
+.info__item--last-nth p:nth-of-type(3) {
+	padding: 25px;
+}
+
+.info__item--last-not a:not(.not) {
+	background-color: black;
+	border: 1px solid #ff0033;
+}
+
+/* ТУТ ДУЖЕ НЕПОНЯТНА І ВАЖКА ШНЯГА) ЯКЩО В БАТЬКІВСЬКОМУ ЕЛЕМЕНТІ Є ВКАЗАНИЙ КЛАС, В ДАНОМУ ПРИКЛАДІ КЛАСУ ".no", ТІЛЬКИ ТОДІ БАТЬКІВСЬКИЙ ЕЛЕМЕНТ БУДЕ ЯКОСЬ ЗМІНЮВАТИСЬ ПРИ ВКАЗАННІ КЛАСУ, ІНАКШЕ НІ. ТОБТО, У ПСЕВДОКЛАСІВ :has та :not  різні типи вкладенності ЦЕ ВАЖЛИВО!!! треба багато і дуже багато практики */
+
+/* P.S. Нижній падінг вказаний для того, щоб були відступи, якщо буде в блоці багато елементів. Якщо чесно мені просто вже впадло вказувати відсутність нижніх відступів для блоків в яких елементи переносяться нижче =))) СОРЯН, треба ж трохи колхозу)))  */
+
+.info__item--last-has:has(.has) {
+	background-color: black;
+	border: 1px solid #ff0033;
+	border-radius: 10px;
+}
+
+.info__item--last-ba a:first-child::before {
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/saw_black_icon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.info__item--last-ba a:last-child::after {
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/saw_black_icon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+.info__block--game {
+	text-align: center;
+}
+
+.info__block--game h2 {
+	font-size: 40px;
+	text-transform: uppercase;
+	transition: all 0.3s;
+}
+
+.info__block--game a:hover {
+	background-color: #7d081f;
+	color: #ff0033;
+	transform: scale(1.2);
+}
+
+.info__block--game h2:hover {
+	transform: scale(1.05);
+	background-color: #000;
+	color: #fff;
+	text-shadow: 3px 1px 5px #000;
+}
+
+.info__block--model {
+	font-size: 40px;
+	text-align: center;
+}
+
+.info__block--model a {
+	background-color: #7d081f;
+	border: 1px solid #000;
+	border-radius: 10px;
+	padding: 15px;
+	transition: transform 0.3s;
+}
+
+.info__block--model a:hover {
+	transform: scale(1.2);
+}
+
+.footer__info {
+	background-color: #7d081f;
+	text-align: center;
+}
+
+.footer__info p {
+	font-size: 40px;
+	padding: 25px;
+}

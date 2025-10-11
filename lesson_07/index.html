@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 7</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="head">
+				<div class="head__title">
+					<h1>Заняття 7. Псевдокласи та псевдоелементи</h1>
+				</div>
+				<div class="head__list">
+					<nav class="head__items">
+						<ul class="head__item"><a href="#section-01">Псевдоклас :hover</a></ul>
+						<ul class="head__item"><a href="#section-02">Псевдоклас :active</a></ul>
+						<ul class="head__item"><a href="#section-03">Псевдоклас :visited</a></ul>
+						<ul class="head__item"><a href="#section-04">Псевдоклас :focus,
+								:focus-visible</a></ul>
+						<ul class="head__item"><a href="#section-05">Псевдоклас :target</a></ul>
+						<ul class="head__item"><a href="#section-06">Псевдоклас :first-child,
+								:first-of-type</a></ul>
+						<ul class="head__item"><a href="#section-07">Псевдоклас :last-child,
+								:last-of-type</a></ul>
+						<ul class="head__item"><a href="#section-08">Псевдоклас :nth-child, :nth-of-type()</a></ul>
+						<ul class="head__item"><a href="#section-09">Псевдоклас :not</a></ul>
+						<ul class="head__item"><a href="#section-09">Псевдоклас :has</a></ul>
+						<ul class="head__item"><a href="#section-10">Псевдоелементи ::before, ::after</a></ul>
+						<ul class="head__item game"><a href="#section-11">Do you whant to play a game? ----> click</a></ul>
+						<ul class="head__item"><a href="#section-12">Макет</a></ul>
+					</nav>
+				</div>
+			</header>
+
+			<main class="info">
+				<div class="info__block" id="section-01">
+					<h2>:hover</h2>
+					<div class="info__items">
+						<a href="#" class="info__item info__item--hover">Посилання</a>
+						<a href="#" class="info__item info__item--hover">Посилання</a>
+						<a href="#" class="info__item info__item--hover">Посилання</a>
+					</div>
+				</div>
+
+				<div class="info__block" id="section-02">
+					<h2>:active</h2>
+					<div class="info__items">
+						<a href="#" class="info__item info__item--active">Клікни тут</a>
+						<a href="#" class="info__item info__item--active">Клікни тут</a>
+						<a href="#" class="info__item info__item--active">Клікни тут</a>
+					</div>
+				</div>
+
+				<div class="info__block" id="section-03">
+					<h2>:visited</h2>
+					<div class="info__items">
+						<a href="https://www.saw.movie/" target="_blank" class="info__item info__item--visited">Клікни тут</a>
+						<a href="https://www.saw.movie/tickets/" target="_blank"  class="info__item info__item--visited">Клікни тут</a>
+						<a href="https://www.saw.movie/videos/" target="_blank"  class="info__item info__item--visited">Клікни тут</a>
+					</div>
+				</div>
+
+				<div class="info__block" id="section-04">
+					<h2>:focus, :focus-visible</h2>
+					<div class="info__items">
+						<a href="https://www.saw.movie/" target="_blank" class="info__item info__item--focus">Спробуй дотабати</a>
+						<a href="https://www.saw.movie/tickets/" target="_blank"  class="info__item info__item--focus">Клікни тут</a>
+					</div>
+				</div>
+
+
+				<div class="info__block" id="section-05">
+					<h2>:target</h2>
+					<div class="info__items">
+						<a href="#section-01" class="info__item info__item--target">:hover</a>
+						<a href="#section-02" class="info__item info__item--target">:active</a>
+						<a href="#section-03" class="info__item info__item--target">:visited</a>
+						<a href="#section-04" class="info__item info__item--target">:focus</a>
+					</div>
+				</div>
+
+				<div class="info__block" id="section-06">
+					<h2>:first-child, :first-of-type</h2>
+					<div class="info__items info__item--first-child">
+						<a href="#" class="info__item">Child</a>
+						<p class="info__item">Type</p>
+						<a href="#" class="info__item">Child2</a>
+						<p class="info__item">Type2</p>
+						<span></span>
+					</div>
+				</div>
+
+				<div class="info__block" id="section-07">
+					<h2>:last-child, :last-of-type</h2>
+					<div class="info__items info__item--last-child">
+						<a href="#" class="info__item">First child</a>
+						<p class="info__item">First type</p>
+						<a href="#" class="info__item">Child2</a>
+						<p class="info__item">Type2</p>
+						<p class="info__item">Last type</p>
+						<a href="#" class="info__item">Last child</a>
+					</div>
+				</div>
+
+				<div class="info__block" id="section-08">
+					<h2>:nth-child, :nth-of-type()</h2>
+					<div class="info__items info__item--last-nth">
+						<a href="#" class="info__item">First child</a>
+						<p class="info__item">First type</p>
+						<a href="#" class="info__item">Child2</a>
+						<p class="info__item">Type2</p>
+						<p class="info__item">Last type</p>
+						<a href="#" class="info__item">Last child</a>
+					</div>
+				</div>
+
+				<div class="info__block" id="section-09">
+					<h2>:not</h2>
+					<div class="info__items info__item--last-not">
+						<a href="#" class="info__item has">First child</a>
+						<a href="#" class="info__item not">Child2</a>
+						<a href="#" class="info__item has">Last child</a>
+					</div>
+				</div>
+
+				<div class="info__block" id="section-10">
+					<h2>:not</h2>
+					<div class="info__items info__item--last-has">
+						<a href="#" class="info__item has">First child</a>
+						<a href="#" class="info__item not">Child2</a>
+						<a href="#" class="info__item has">Last child</a>
+					</div>
+				</div>
+
+				<div class="info__block" id="section-10">
+					<h2>::before, ::after - а щас буде комбо (дивись код)</h2>
+					<div class="info__items info__item--last-ba">
+						<a href="#" class="info__item has">First child</a>
+						<a href="#" class="info__item not">Child2</a>
+						<a href="#" class="info__item has">Last child</a>
+					</div>
+				</div>
+
+				<div class="info__block info__block--game" id="section-11">
+					<h2>Do you whant to play a game? &#10225; click down </h2>
+					<div class="info__items info__item--last-ba">
+						<a href="scared.html" class="info__item scared">I’m scared &#128560;</a>
+						<a href="game.html" class="info__item ready">I’m ready &#128544;</a>
+					</div>
+				</div>
+
+				<div class="info__block info__block--model" id="section-12">
+					<a href="design.html">Макет</a>
+				</div>
+			</main>
+
+			<footer class="footer__info">
+				<p>(©) Directed by Denis Fritsler</p>
+			</footer>
+		</div>
+	</body>
+</html>

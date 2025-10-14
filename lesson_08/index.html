@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 8</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__logo">
+					<div class="header__img">
+						<a href="#" class="header__link"><img src="/img/shanti-svg.svg" alt=""></a>
+						<span>--- Content, icon, SVG, vector (По факту шрифт, але вивантажена в іконку)</span>
+					</div>
+				</div>
+			</header>
+			<main class="site-info">
+				<div class="site-types">
+					<div class="site-type">
+						<div class="site-type--jpg">
+							<img src="img/women-sit.jpg" alt="A woman in a tan sports bra and leggings performs a yoga pose on a mat, showcasing her balance and focus.">
+							<span>JPG image, use with background, lighter weight.</span>
+						</div>
+					</div>
+					<div class="site-type">
+						<div class="site-type--png">
+							<img src="img/women-sit.png" alt="A woman in a tan sports bra and leggings performs a yoga pose on a mat, showcasing her balance and focus.">
+							<span>PNG image, use with transparency, larger size weight.</span>
+						</div>
+					</div>
+					<div class="site-type">
+						<div class="site-type--webp">
+							<img src="img/women-sit-1x.webp" alt="A woman in a tan sports bra and leggings performs a yoga pose on a mat, showcasing her balance and focus.">
+							<span>JPEG ~ WEBP image, best type of images. Small size, there are no drawbacks. It is recommended to always convert all PNG and JPEG to AVIF and WEBP formats</span>
+						</div>
+					</div>
+					<div class="site-type">
+						<div class="site-type--density">
+							<img srcset="img/women-lotos-1x.webp 1x, img/women-lotos-2x.webp 2x, img/women-lotos-3x.webp 3x" src="img/women-lotos-1x.webp" alt="A woman in a tan sports bra and leggings performs a yoga pose on a mat, showcasing her balance and focus." >
+							<span>JPEG ~ WEBP raster image with different densities for different display types. Does not work in Safari.</span>
+						</div>
+					</div>
+					<div class="site-type">
+						<div class="site-type--density-safari">
+							<picture>
+  							<source srcset="img/for-beginners-1x.webp 1x, img/for-beginners-2x.webp 2x, img/for-beginners-3x.webp 3x" type="image/webp">
+  							<img src="img/for-beginners-1x.webp" alt="A woman in a tan sports bra and leggings performs a yoga pose on a mat, showcasing her balance and focus.">
+							</picture>
+							<picture>
+  							<source srcset="img/individual-1x.webp 1x, img/individual-2x.webp 2x, img/individual-3x.webp 3x" type="image/webp">
+  							<img src="img/individual-1x.webp" alt="A woman in a tan sports bra and leggings performs a yoga pose on a mat, showcasing her balance and focus.">
+							</picture>
+							<picture>
+  							<source srcset="img/practice-1x.webp 1x, img/practice-2x.webp 2x, img/practice-3x.webp 3x" type="image/webp">
+  							<img src="img/practice-1x.webp" alt="A woman in a tan sports bra and leggings performs a yoga pose on a mat, showcasing her balance and focus.">
+							</picture>
+							<span>JPEG ~ WEBP raster image with different densities for different display types. Work in Safari. Is used tag "picture"</span>
+						</div>
+					</div>
+					<div class="site-type">
+						<div class="site-type--svg">
+							<img src="img/circle-svg.svg" alt="circle image svg for content">
+							<span>SVG, icon, content image</span>
+						</div>
+					</div>
+					<div class="site-type">
+						<div class="site-type--svg">
+							<img src="img/flower-left-1x.webp" alt="circle image svg for content">
+							<img src="img/flower-right-1x.webp" alt="circle image svg for content">
+							<span>WEBP, image, content and decore image</span>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="basemant">
+					<p>(©) Directed by Denis Fritsler</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

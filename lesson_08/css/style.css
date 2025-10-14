@@ -1,0 +1,101 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+
+
+body {
+	background-color: #575757;
+	color: #fff;
+	font-size: 18px;
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+.header__logo {
+	padding: 15px 0;
+}
+.header__img {
+	padding: 15px;
+	text-align: center;
+	font-size: 26px;
+	background-color: #6e6e6e;
+	border-radius: 10px;
+}
+.header__img a {
+	margin-right: 20px;
+}
+
+.header__img span {
+	display: inline-block;
+}
+
+.site-info {
+	padding-top: 50px;
+}
+
+.site__info {
+	text-align: center;
+}
+
+.section-jpg span {
+	display: block;
+}
+
+.site-types {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.site-types > * { 
+	margin-bottom: 20px;
+}
+
+.site-types > *:last-child {
+	margin-bottom: 0;
+}
+
+.site-type {
+	border-bottom: 50px solid #6e6e6e;
+	padding-bottom: 20px;
+}
+
+.site-type span {	
+	font-size: 26px;
+}
+
+.site-type img {
+	margin-right: 30px;
+}
+
+.site-type--webp span{
+	display: block;	
+}
+
+.site-type--webp img{
+	margin-bottom: 15px;
+}
+
+.site-type--density-safari img:last-child {
+	margin-bottom: 20px;
+}
+
+.site-type--density-safari span {
+	display: inline-block;
+}
+
+.site-type--svg {
+	margin-bottom: 20px;
+}
+
+.site-type--svg:last-child {
+	margin-bottom: 0;
+}
+
+.basemant {
+	text-align: center;
+	font-size: 40px;
+	padding: 20px;
+}

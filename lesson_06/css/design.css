@@ -16,6 +16,84 @@
 	letter-spacing: 3px;
 	text-shadow: 3px 1px 5px black;
 }
+
+
+/* BANNER STYLES =======================================*/
+
+.container__banner {
+	background-image: url(../img/Rectangle.png);
+	margin: 0 auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 80px;
+}
+
+.banner {
+ 	max-width: 1132px;
+	margin: 0 auto;
+	padding-top: 114px;
+	padding-bottom: 110px;
+}
+
+.banner__info{
+	font-family: "Lato", serif;
+	max-width: 520px;
+	margin: 0 5px 0 auto;
+	color: #2f302c;
+	font-size: 0;
+}
+
+.banner__subtitle {
+	font-size: 20px; 
+	font-weight: 700;
+	line-height: 1.4;
+	margin-bottom: 20px;
+}
+
+.banner__title {
+	font-family: "Montserrat", sans-serif;
+	font-size: 96px;
+	font-weight: 700;
+	line-height: 1.04;
+	margin-bottom: 16px;
+}
+
+.banner__title p span { 
+	font-weight: 800;
+}
+
+.banner__divider {
+	max-width: 308px;
+	height: 2px;
+	background-color: #252B42;
+	margin-left: 5px;
+	margin-bottom: 36px;
+}
+
+.banner__tagline {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.4;
+	margin-bottom: 20px;
+}
+
+.banner__description {
+	width: 100%;
+	max-width: 374px;
+	min-height: auto;
+	color: #7e7f7c;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.25;
+}
+
+@media (max-width: 767.98px) {
+	.banner__title {
+		font-size: 55px;
+	}
+}
+
 /* Card styles ==================================== */
 
 .plans {
@@ -26,8 +104,7 @@
 .plan {
 	font-family: "Montserrat", sans-serif;
 	display: inline-block;
-	margin-left: 8px;
-	margin-bottom: 20px;
+	margin-right: 8px;
 	width: 100%;
 	box-shadow: 0 13px 19px 0 rgba(0,0,0,.07);
 	max-width: 351px;
@@ -62,7 +139,7 @@
 }
 .plan__billing {
 	display: inline-block;
-	margin-left: 16px;
+	margin-right: 16px;
 }
 
 .plan__period {
@@ -111,11 +188,13 @@
 }
 
 .plan__button {
+	width: 100%;
+	text-align: center;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 2;
 	text-align: center;
-	padding: 6px 88.5px;
+	padding: 6px 20px;
 	border: 1px solid #252b42;
 	border-radius: 24px;
 	transition: all 0.3s;
@@ -124,76 +203,4 @@
 .plan__button:hover {
 	color: #fff;
 	background-color: #31a0fe;
-}
-
-/* BANNER STYLES =======================================*/
-
-.container__banner {
-	background-image: url(../img/Rectangle.png);
-	margin: 0 auto;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-bottom: 80px;
-}
-
-.banner {
- 	max-width: 1132px;
-	margin: 0 auto;
-}
-
-.banner__info{
-	font-family: "Lato", serif;
-	max-width: 520px;
-	padding-top: 114px;
-	padding-bottom: 110px;
-	margin: 0 5px 0 auto;
-	color: #2f302c;
-	font-size: 0;
-}
-
-.banner__text1 {
-	font-size: 20px; 
-	font-weight: 700;
-	line-height: 1.4;
-	margin-bottom: 20px;
-}
-
-.banner__text2 {
-	font-family: "Montserrat", sans-serif;
-	font-size: 96px;
-	font-weight: 800;
-	line-height: 1.04;
-	margin-bottom: 16px;
-}
-
-.banner__line {
-	max-width: 308px;
-	height: 2px;
-	background-color: #252B42;
-	margin-left: 5px;
-	margin-bottom: 36px;
-}
-
-.banner__text3 {
-	font-size: 20px;
-	font-weight: 700;
-	line-height: 1.4;
-	margin-bottom: 20px;
-}
-
-.banner__text4 {
-	width: 100%;
-	max-width: 374px;
-	min-height: auto;
-	color: #7e7f7c;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 1.25;
-}
-
-@media (max-width: 767.98px) {
-	.banner__text2 {
-		font-size: 55px;
-	}
 }

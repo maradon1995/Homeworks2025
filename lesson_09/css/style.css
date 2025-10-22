@@ -10,13 +10,13 @@
 	margin: 0 auto;
 }
 
-.banner {
+.hero {
 	background: url("../img/Rectangle.png");
 	background-repeat: no-repeat;
 	max-width: 1920px;
 	min-height: 612px;
 }
 
-.block-trust__items {
+.trust__items {
 	display: flex;
 }

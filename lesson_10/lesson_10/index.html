@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 10</title>
+	</head>
+	<body>
+		<div class="wrapper" id="top">
+			<header class="head">
+				<div class="container-head">
+					<img class="logo-head" src="img/logo-franchise.png" alt=" Cyberpunk 2077 logo featuring a stylized, futuristic design with bold typography and vibrant colors.">
+					<div class="list">
+						<ul class="list__items">
+							<li class="list__item"><a class="list__link" href="#info">Позиціонування в CSS</a></li>
+							<li class="list__item list__item--sublist"><a class="list__link" href="#">Властивості позиціонування</a>
+								<ul class="list__sub-menu">
+									<li class="list__sub-item"><a href="#static">Статичне (static)</a></li>
+									<li class="list__sub-item"><a href="#relative">Відносне (relative)</a></li>
+									<li class="list__sub-item"><a href="#absolute">Абсолютне (sbsolute)</a></li>
+									<li class="list__sub-item"><a href="#fixed">Фіксоване (fixed)</a></li>
+									<li class="list__sub-item"><a href="#sticky">Липке (sticky)</a></li>
+									<li class="list__sub-item list__sub-item--sub-menu"><a href="#">Накладання елементів</a>
+										<ul class="sub-sub-menu">
+											<li class="sub-sub-item"><a href="#z-index">z-index</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="list__item"><a class="list__link" href="#homework">Домашка</a></li>
+							<li class="list__item"><a class="list__link" href="../index.html">Вибір уроків</a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+
+			<main class="page">
+				<div class="container-page">
+					<div class="main-title">
+						<h1>Експеременти позиціювання, для кращого розуміння його роботи. "2025"</h1>
+					</div>
+				
+					<section class="info" id="info">
+						<div class="cube-top"></div>
+						<h2>Позиціонування в CSS</h2>
+						<div class="title-info">
+							<p>Позиціонування в CSS — це механізм, який визначає, як та де елементи розташовуються на веб-сторінці відносно їхнього звичайного потоку, батьківських елементів та інших сусідніх об’єктів, також як вони реагують на зміни розміру вікна чи контейнера. CSS надає кілька основних типів позиціонування:</p>
+						</div>
+						<div class="cube-bottom"></div>
+					</section>
+
+					<section class="properties" id="static">
+						<div class="properties__container">
+							<div class="cube-top-yellow cube"></div>
+							<h2>Статичне (static)</h2>
+							<div class="properties__info">
+								<p>position: static — це значення властивості position у CSS, яке є значенням за замовчуванням. Елементи зі static позиціонуванням розташовуються у звичайному потоці документа, тобто в тому порядку, в якому вони йдуть в HTML-коді. Вони не підлягають зміщенню за допомогою властивостей top, right, bottom або left. </p>
+							</div>
+							<div class="cube-bottom-yellow cube"></div>
+							<div class="properties__boxes">
+								<div class="properties__box"></div>
+								<div class="properties__box properties__box--color"></div>
+								<div class="properties__box"></div>
+							</div>
+						</div>
+					</section>
+
+					<section class="properties" id="relative">
+						<div class="properties__container">
+							<div class="cube-top cube"></div>
+							<h2>Відносне (relative)</h2>
+							<div class="properties__info">
+								<p>position: relative; — об'єкт позиціонується відносно свого поточного місця положення в коді. З position:relative; працюють властивості top, left, right, bottom та z-index </p>
+							</div>
+							<div class="cube-bottom cube"></div>
+							<div class="properties__boxes">
+								<div class="properties__box"></div>
+								<div class="properties__box properties__box--color box-relative"></div>
+								<div class="properties__box"></div>
+							</div>
+						</div>
+					</section>
+
+					<section class="properties" id="absolute">
+						<div class="properties__container">
+							<div class="cube-top-yellow cube"></div>
+							<h2>Абсолютне (absolute)</h2>
+							<div class="properties__info">
+								<p>position: absolute; — абсолютне (безумовне) позиціонування. Об'єкт позиціонується відносно першого батьківського елементу, position якого відмінний від static. Об'єкт втрачає свою блочну сутність та простір який він займав.</p>
+							</div>
+							<div class="cube-bottom-yellow cube"></div>
+							<div class="properties__boxes">
+								<div class="properties__box"></div>
+								<div class="properties__box properties__box--color box-absolute"></div>
+								<div class="properties__box"></div>
+							</div>
+						</div>
+					</section>
+
+					<section class="properties" id="fixed">
+						<div class="properties__container">
+							<div class="cube-top cube"></div>
+							<h2>Фіксоване (fixed)</h2>
+							<div class="properties__info">
+								<p>position: fixed; — фіксоване позиціонування відносно вікна браузера (вюпорта). Об'єкт втрачає блочну сутність, положення в коді, простір. Не бере участі у скролі (не скролиться з контентом).</p>
+							</div>
+							<div class="cube-bottom cube"></div>
+							<div class="properties__boxes boxes-fixed">
+								<div class="properties__box"></div>
+								<div class="properties__box properties__box--color box-fixed"><a href="#top">UP</a></div>
+								<div class="properties__box"></div>
+							</div>
+						</div>
+					</section>
+
+					<section class="properties" id="sticky">
+						<div class="properties__container">
+							<div class="cube-top-yellow cube"></div>
+							<h2>Липке (sticky)</h2>
+							<div class="properties__info properties__info--span-color">
+								<p>position: sticky; — гібридне поєднання значень static та fixed. Спочатку елемент поводитися як static, але після того, як скрол доходить до нього, стає fixed. Залишається блочним. </p>
+								<p><span>ВАЖЛИВО!</span> Не працює, якщо у батьківських об'єктах присутній overflow: hidden; Працює з новим значенням overflow: clip для батьківських блоків.  </p>
+							</div>
+							<div class="cube-bottom-yellow cube"></div>
+							<div class="properties__boxes boxes-sticky">
+								<div class="properties__box"></div>
+								<div class="properties__box properties__box--color box-sticky"></div>
+								<div class="properties__box"></div>
+							</div>
+						</div>
+					</section>
+
+					<section class="properties" id="z-index">
+						<div class="properties__container">
+							<div class="cube-top cube"></div>
+							<h2>Позиціонування по (z-index)</h2>
+							<div class="properties__info">
+								<p> z-index  — перекривання обʼєктів одного іншим. Найвищий z-index (тобто ближче до нас) в елемента, що попереду (за замовченням це об'єкт нижче по коду, або auto чи 0)</p>
+							</div>
+							<div class="cube-bottom cube"></div>
+							<div class="properties__boxes boxes-z-index">
+								<div class="properties__block">
+									<div class="properties__box"></div>
+									<p>z-index:1</p>
+								</div>
+								<div class="properties__block">
+									<div class="properties__box"></div>
+									<p>z-index:2</p>
+								</div>
+								<div class="properties__block">
+									<div class="properties__box"></div>
+									<p>z-index:3</p>
+								</div>
+								<div class="properties__block">
+									<div class="properties__box"></div>
+									<p>z-index:2</p>
+								</div>
+								<div class="properties__block">
+									<div class="properties__box"></div>
+									<p>z-index:1</p>
+								</div>
+								<div class="properties__block">
+									<div class="properties__box"></div>
+									<p>z-index:2</p>
+								</div>
+								<div class="properties__block">
+									<div class="properties__box"></div>
+									<p>z-index:3</p>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<section class="homework" id="homework">
+					<div class="homework__container">
+						<h2 class="homework__title">Design elements</h2>
+						<div class="homework__list">
+							<ul class="homework__items">
+								<li class="homework__item">Unlimited product updates</li>
+								<li class="homework__item">Unlimited product</li>
+								<li class="homework__item">Unlimited product</li>
+								<li class="homework__item">1GB Cloud storage</li>
+								<li class="homework__item">Email and community support</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="homework__container">
+						<div class="homework__faces faces">
+							<h2>Face</h2>
+							<div class="faces_blocks">
+								<div class="faces__block faces__block--cleancer">
+									<p>Cleansers</p>
+									<a href="#">More</a>
+								</div>
+								<div class="faces__block faces__block--panches">
+									<p>Eye Panches</p>
+									<a href="">More</a>
+								</div>
+								<div class="faces__block faces__block--mask">
+									<p>Мasks</p>
+									<a href="#">More</a>
+								</div>
+							</div>
+							<button class="button" type="button">More</button>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="basement">
+				<p>(©) Directed by Denis Fritsler</p>
+			</footer>
+		</div>
+	</body>
+</html>

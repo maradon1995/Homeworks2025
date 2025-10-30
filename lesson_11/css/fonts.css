@@ -55,6 +55,6 @@
     font-family: 'Blender Pro';
     src: url("../fonts/BlenderPro-Thin.woff2") format("woff2");
 		font-display: swap;
-    font-weight: thin;
+    font-weight: 100;
     font-style: normal;
 }

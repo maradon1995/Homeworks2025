@@ -26,7 +26,6 @@
 
 @keyframes rotate-body {
 	0% {
-		rotate: 0;
 	}
 	100% {
 		rotate: 0.5deg;
@@ -37,7 +36,7 @@
 
 	}
 	100% {
-		rotate: 10deg;
+		rotate: 3deg;
 	}
 }
 

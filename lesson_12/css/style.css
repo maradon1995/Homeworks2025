@@ -144,7 +144,6 @@ body {
 .camaro__container {
   position: relative;
   margin-left: 80px;
-  animation: engine duration linear infinite direction;
 }
 /* BODY================================================= */
 .camaro__body-bottom {
@@ -203,7 +202,7 @@ body {
   height: 45px;
   rotate: -5deg;
   transform: skew(15deg);
-  background-color: #000;
+  background-color: #141414;
   border-radius: 3px;
   translate: 187px 65px;
   border-right: 5px solid black;
@@ -785,7 +784,6 @@ body {
   animation-timing-function: linear, linear, linear;
   animation-delay: 8s, 12s, 14s;
   animation-fill-mode: forwards, forwards, none;
-  transform: left bottom;
 }
 
 .camaro__underwings--turns-front,

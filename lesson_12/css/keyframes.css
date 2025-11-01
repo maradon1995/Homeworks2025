@@ -1,0 +1,136 @@
+@keyframes engine {
+  0% {
+		translate: -15px -5px;
+    top: 0;
+  }
+  100% {
+		translate: -15px -5px;
+    top: 2px;
+  }
+}
+
+@keyframes visible-hidden {
+	0% {
+		visibility: hidden;
+		opacity: 0;
+	}
+	50% {
+		visibility: visible;
+		opacity: 1;
+	}
+	100% {
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+@keyframes rotate-body {
+	0% {
+		rotate: 0;
+	}
+	100% {
+		rotate: 0.5deg;
+	}
+}
+@keyframes crash {
+	0%{
+
+	}
+	100% {
+		rotate: 10deg;
+	}
+}
+
+@keyframes reset-body {
+	0% {
+		rotate: 0.5deg;
+	}
+	50% {
+		rotate: 0deg;
+	}
+}
+
+@keyframes rotate-wheel-back {
+	0% {}
+	100% {
+		rotate: -360deg;
+	}
+}
+
+@keyframes rotate-wheels {
+	0% {
+
+	}
+	100% {
+		rotate: -360deg;
+	}
+}
+
+@keyframes move { 
+	0% {}
+	100% {
+		translate: -1700px;
+	}
+}
+@keyframes move-reverse {
+  0% {
+    translate: -1700px;
+    transform: scaleX(-1);
+  }
+  100% {
+    translate: -300px;
+    transform: scaleX(-1);
+  }
+}
+
+@keyframes minivan {
+	0% {
+
+	}
+	100% {
+		left: 1250px;
+	}
+}
+
+@keyframes turns-click {
+	0% {
+
+	}
+	100% {
+		box-shadow: none;
+	}
+}
+
+/* ======================BACKGROUND======================= */
+
+@keyframes move-trees {
+	0% {}
+	100% {
+		translate: 60%;
+	}
+}
+@keyframes move-road {
+	0% {}
+		100% {
+			translate: 240px;
+		}
+}
+@keyframes move-clouds {
+	0% {}
+	100% {
+		translate: 200px;
+	}
+}
+@keyframes move-trees-reverse {
+	0% {}
+	100% {
+		translate: 0;
+	}
+}
+
+@keyframes move-clouds-reverse {
+	0% {}
+	100% {
+		translate: -100px;
+	}
+}

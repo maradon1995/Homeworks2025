@@ -26,8 +26,8 @@ body {
 .background {
   position: relative;
   height: 570px;
-  background: #83d1f2;
   background: linear-gradient(180deg,rgba(148, 183, 212, 1) 65%, rgba(255, 255, 255, 1) 83%);
+  background-color: rgba(148,183,212,1);
 }
 
 .background__sun {
@@ -738,9 +738,9 @@ body {
 /* FOOTER ============================================== */
 
 .basemant {
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
-  padding: 40px;
+  padding: 100px;
 }
 
 /* ================  CAMARO ANIMATIONS   ==================*/ 
@@ -815,6 +815,14 @@ body {
 .background__trees {
   animation: move-trees 3s linear 6s forwards,
              move-trees-reverse 2s linear 12s forwards;
+}
+
+.background {
+  animation: sky 2s linear 11s forwards;
+}
+
+.background__sun {
+  animation: sun 2s linear 11s forwards;
 }
 
 .minivan {

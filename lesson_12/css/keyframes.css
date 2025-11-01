@@ -101,6 +101,25 @@
 	}
 }
 
+@keyframes sky {
+	0% {
+		background: linear-gradient(180deg,rgba(148, 183, 212, 1) 65%, rgba(255, 255, 255, 1) 83%);
+	}
+	100% {
+		background: rgb(25, 25, 25);
+	}
+}
+
+@keyframes sun {
+	0% {
+
+	}
+	100% {
+		background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(165, 210, 255) 100%);
+  	box-shadow: 0px 0px 198px 46px rgb(165, 210, 255);
+	}
+}
+
 /* ======================BACKGROUND======================= */
 
 @keyframes move-trees {

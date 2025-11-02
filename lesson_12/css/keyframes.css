@@ -52,7 +52,7 @@
 @keyframes rotate-wheel-back {
 	0% {}
 	100% {
-		rotate: -360deg;
+		rotate: 360deg;
 	}
 }
 

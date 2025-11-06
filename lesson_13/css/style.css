@@ -20,11 +20,13 @@ body {
 [class*="__container"] {
   max-width: 1392px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 /* ================ MENU NAVIGATION ====================== */
 
+.header__container {
+  padding: 0 15px;
+}
 .products {
   margin-bottom: 82px;
 }
@@ -313,6 +315,8 @@ body {
   font-weight: 800;
   line-height: 1.25;
 }
+
+/* ===================== MEDIA ====================== */
 
 @media (max-width: 768px) {
   .header__body {

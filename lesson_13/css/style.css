@@ -218,6 +218,7 @@ body {
 }
 .products__grid {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
   flex-shrink: 1;

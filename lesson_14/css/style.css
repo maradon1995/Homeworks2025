@@ -546,4 +546,7 @@ body {
   .service__discount-img {
     padding-left: 40px;
   }
+  .register__title {
+    padding-bottom: 0;
+  }
 }

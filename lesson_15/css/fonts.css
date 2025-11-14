@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open%20Sans:wght@400;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair%20Display:wght@400;500&display=swap');
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Medium.woff2") format("woff2");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Bold.woff2") format("woff2");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Heavy.woff2") format("woff2");
+	font-display: swap;
+	font-weight: 800;
+	font-style: normal;
+}

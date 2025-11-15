@@ -1,0 +1,16 @@
+/* @media (width < 1280px) {
+  .header__nav {
+    margin: 0 auto;
+  }
+
+  .action {
+    flex-basis: 250px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .service__discount {
+    flex-basis: 400px;
+  }
+
+} */

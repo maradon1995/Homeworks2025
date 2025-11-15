@@ -546,6 +546,10 @@ body {
 /* ===================== MEDIA ====================== */
 
 @media (width < 1280px) {
+  .header__body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .header__nav {
     margin: 0 auto;
   }
@@ -562,7 +566,10 @@ body {
 }
 
 @media (width < 1140px) {
-
+  .header__body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
  .service__discount {
     min-height: 500px;
     flex-basis: 800px;
@@ -571,6 +578,10 @@ body {
 }
 
 @media (width < 1131px) {
+  .header__body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .header__body {
     row-gap: 20px;
   }
@@ -581,6 +592,10 @@ body {
 }
 
 @media (width < 660px) {
+  .header__body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .hero__container {
     background-position: 47%;
   }
@@ -597,6 +612,15 @@ body {
   .hero__subline {
     margin-left: auto;
     width: 300px;
+  }
+  .hero__container {
+    margin-bottom: 10px;
+  }
+  .advantages__info h2 {
+    padding-top: 5px;
+  }
+  .register__title {
+    padding-top: 10px;
   }
   .register__title {
     padding-bottom: 10px;
@@ -622,11 +646,25 @@ body {
     font-size: 26px;
     display: none;
   }
+  .form__button {
+    display: block;
+    padding: 20px 140px;
+    margin: 0 auto;
+  }
 }
 
 @media (width < 590px) {
+  .header__body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .header__nav {
     column-gap: 20px;
+  }
+  .form__button {
+    display: block;
+    padding: 10px 50px;
+    margin: 0 auto;
   }
 }
 
@@ -641,6 +679,10 @@ body {
 }
 
 @media (width < 550px) {
+  .header__body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .service__discount {
     min-width: 250px;
   }
@@ -653,7 +695,11 @@ body {
   }
 }
 
-@media (width < 400px) {
+@media (width < 407px) {
+  .header__body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .hero__container {
     background-position: 50%;
     justify-content: center;
@@ -678,6 +724,10 @@ body {
 }
 
 @media (width < 394px) {
+  .header__body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .header__list {
     gap: 20px;
   }

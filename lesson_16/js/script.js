@@ -21,3 +21,4 @@ function updatePlaceholder() {
 }
 
 window.addEventListener('resize', updatePlaceholder);
+

@@ -489,7 +489,7 @@ section h2 {
     width: 37px;
     flex-basis: 37px;
     flex-shrink: 0;
-    overflow: hidden;
+    overflow-x: scroll; 
   }
   .catigories__cards {
     padding: 60px 0;

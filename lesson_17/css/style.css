@@ -421,7 +421,6 @@ section h2 {
   background-color: #d4d4d4;
 }
 
-
 /* ===================== MEDIA ====================== */
 
 @media (width <= 1422px) {
@@ -489,7 +488,7 @@ section h2 {
     width: 37px;
     flex-basis: 37px;
     flex-shrink: 0;
-    overflow-x: scroll; 
+    overflow-x: scroll;
   }
   .catigories__cards {
     padding: 60px 0;
@@ -502,8 +501,6 @@ section h2 {
     grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
   }
 }
-
-
 
 @media (width < 768px) {
   .search-header {
@@ -523,7 +520,7 @@ section h2 {
     content: "";
     height: 1px;
     background-color: #d4d4d4;
-    width: 60%;
+    width: 80%;
     bottom: 0;
   }
   .icon-menu {
@@ -578,6 +575,8 @@ section h2 {
     padding: 50px 15px 30px 15px;
     transition: left 0.5s;
     margin-top: 80px;
+    box-shadow: 0 -10px 10px -10px #2f302c, 
+    0 10px 10px -10px #2f302c;
   }
   .menu::before {
     position: fixed;
@@ -655,7 +654,6 @@ section h2 {
     grid-template-columns: 1fr;
   }
 
-
   [data-menu-open] .icon-menu span {
     opacity: 0;
     transition: opacity 0.3s;
@@ -676,25 +674,27 @@ section h2 {
     background-position: 15%;
     left: 0;
   }
-  
+
   .icon-menu.icon-menu--fixed {
-    display: flex; 
-        justify-content: center; 
-        align-items: center;
-        position: fixed; 
-        top: 80px; 
-        right: 15px;
-        z-index: 5;
-        border: 1.5px solid #2f302c;
-        padding: 14px;
-        border-radius: 50%;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 120px;
+    right: 15px;
+    z-index: 5;
+    border: 1.5px solid #2f302c;
+    padding: 15px;
+    border-radius: 50%;
+  }
 
   .icon-menu.icon-menu--fixed::before {
-    translate: 1px -50%;
+    translate: 2px -50%;
+    width: 90%;
   }
   .icon-menu.icon-menu--fixed::after {
-    translate: 1px 50%;
+    translate: 1px 51%;
+    width: 90%;
   }
 }
 
@@ -749,7 +749,20 @@ section h2 {
   section h2 {
     font-size: 28px;
   }
+  .icon-menu.icon-menu--fixed {
+    top: 85px;
+  }
+
+  .icon-menu.icon-menu--fixed::before {
+    translate: 2px -50%;
+    width: 90%;
+  }
+  .icon-menu.icon-menu--fixed::after {
+    translate: 1px 51%;
+    width: 90%;
+  }
 }
+
 @media (width <= 445px) {
   .content__items {
     gap: 10px;
@@ -782,17 +795,23 @@ section h2 {
   .content span:last-of-type {
     position: absolute;
     top: 35%;
-    right:  0;
+    right: 0;
     background: url("../img/icons/arrow-right.svg") center no-repeat;
     width: 16px;
     height: 16px;
-    }
+  }
 }
 
 @media (width <= 400px) {
   .search-header::after {
     width: 100%;
   }
+}
+
+@media (width < 370px) {
+  .search-header::after {
+    max-width: 80%;
+  }  
 }
 
 /* ================================================== */

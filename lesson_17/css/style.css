@@ -765,6 +765,7 @@ section h2 {
 
 @media (width <= 445px) {
   .content__items {
+    border-bottom: 1px solid #2f302c;
     gap: 10px;
     grid-auto-flow: column;
     grid-auto-columns: 170px;

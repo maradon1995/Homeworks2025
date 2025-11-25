@@ -766,6 +766,27 @@ section h2 {
   .products__filter-item {
     font-size: 14px;
   }
+
+  .content {
+    position: relative;
+  }
+  .content span:first-of-type {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    background: url("../img/icons/arrow-right.svg") center no-repeat;
+    width: 16px;
+    height: 16px;
+    rotate: 180deg;
+  }
+  .content span:last-of-type {
+    position: absolute;
+    top: 35%;
+    right:  0;
+    background: url("../img/icons/arrow-right.svg") center no-repeat;
+    width: 16px;
+    height: 16px;
+    }
 }
 
 @media (width <= 400px) {

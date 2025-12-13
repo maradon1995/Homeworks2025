@@ -8,7 +8,5 @@ function documentActions(e) {
   if (targetElement.closest(".header__burger")) {
 
     document.documentElement.toggleAttribute("header-burger-open");
-
-    toggleIconMenuFixed();
   }
 }

@@ -1,0 +1,41 @@
+body {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.opacity {
+  opacity: 1;
+  background-color: brown;
+}
+.header {
+	background-color: beige;
+	padding-block: 2.5rem;
+	padding-inline: 2.5rem;
+}
+.header__items {
+	width: 12.5rem;
+	margin: 0 auto;
+	margin-block: 2.5rem;
+}
+.page_container {
+	margin-block-end: 2.5rem;
+}
+.page_container:last-child {
+  color: #fff;
+}
+
+.footer {
+	padding-block: 40px;
+  &__coubes {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  &__coube {
+    width: 12.5rem;
+    height: 12.5rem;
+    background-color: beige;
+    border-radius: 0.625rem;
+  }
+}

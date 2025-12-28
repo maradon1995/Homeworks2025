@@ -16,7 +16,7 @@ function documentAction(e) {
   itemElement.forEach((index) => {
     index.classList.toggle("active");
   });
-}й
+}
 
 // Задача №2
 // Дано в css/scss: body прозорий

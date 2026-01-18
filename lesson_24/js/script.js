@@ -56,8 +56,8 @@ function mouseBlock(e) {
 
 const itemFirstItemElement = document.querySelector(`button`);
 
-let interval = +itemFirstItemElement.dataset.intervalSec;
-let targetNumber = +itemFirstItemElement.dataset.counter;
+const interval = +itemFirstItemElement.dataset.intervalSec;
+const targetNumber = +itemFirstItemElement.dataset.counter;
 let startNumber = 0;
 
 const options = {
@@ -92,7 +92,7 @@ const callback = (entries, observer) => {
 const observer = new IntersectionObserver(callback, options);
 
 const animElement = document.querySelectorAll('[class*="--anim"]');
-animElement.forEach((animElement) => {
+ animElement.forEach((animElement) => {
   observer.observe(animElement);
 });
 

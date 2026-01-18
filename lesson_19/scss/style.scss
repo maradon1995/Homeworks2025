@@ -38,12 +38,16 @@ body {
 // HEADER ---------------------------------
 
 .header {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   color: var(--liteColor);
+  background-color: rgb(29, 29, 29, 0.8);
+  backdrop-filter: blur(0.3125rem);
+  z-index: 2;
 
   &__body {
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,11 +146,9 @@ body {
   }
   @media (width <= 49.875em) {
     position: fixed;
-    top: 5rem;
+    top: 5.7rem;
     width: 100%;
-    height: 100%;
-    background-color: rgb(29, 29, 29, 0.8);
-    backdrop-filter: blur(0.3125rem);
+    height: calc(100vh - 5.7rem);
     flex-direction: column;
     left: 0;
     right: 0;
@@ -155,15 +157,24 @@ body {
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s;
+    overflow: hidden;
 
     &__items {
-      height: 100svh;
-      flex-direction: column;
+      height: 100%;
       width: 100%;
+      flex-direction: column;
       align-items: center;
       padding-block: 3.125rem;
       transition: all 0.3s;
     }
+
+    @at-root [header-burger-open] .header {
+    height: 100vh;
+  }
+
+    @at-root  [header-burger-open] body {
+        overflow: hidden;
+      }
 
     @at-root [header-burger-open] .menu-header {
       position: fixed;
@@ -200,21 +211,35 @@ body {
 // HERO ------------------------------------------------
 
 .hero {
+  position: relative;
   color: var(--liteColor);
-  background: url("../img/home-logo.avif") center / cover no-repeat;
-  width: 100svw;
-  height: 100svh;
+  min-height: 100svh;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
   &__container {
-    height: 100svh;
+    min-height: 100svh;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
   }
 
   &__content {
     display: flex;
     position: relative;
-    top: 10.9375rem;
     flex-direction: column;
     align-items: center;
     padding: 1.375rem;
@@ -222,12 +247,14 @@ body {
   }
 
   &__title {
+    text-align: center;
     font-size: 2.9375rem;
     line-height: 1.2;
     margin-block-end: 1.5rem;
   }
 
   &__description {
+    text-align: center;
     font-size: 0.875rem;
     line-height: 1.2;
     margin-block-end: 3.75rem;
@@ -236,6 +263,8 @@ body {
 
 .btn {
   color: var(--liteColor);
+  text-align: center;
+  width: 8.125rem;
   padding-inline: 0.8125rem;
   padding-block: 0.625rem;
   border-inline: 0.0625rem solid var(--liteColor);
@@ -253,6 +282,14 @@ body {
   }
 }
 
+@media (width <= 52.75em) {
+  .hero {
+    &__title {
+      font-size: 36px;
+    }
+  }
+}
+
 // ABOUT ------------------------------------------------
 
 .about {
@@ -265,7 +302,7 @@ body {
       font-weight: 400;
       line-height: 1.2;
       text-align: center;
-      padding-block-end: 7.1875rem;
+      margin-block-end: 7.1875rem;
     }
   }
 
@@ -293,9 +330,14 @@ body {
   }
 
   &__img {
+    width: 100%;
+    max-width: 316px;
+
     img {
+      width: 100%;
+      height: auto;
       object-fit: cover;
-      aspect-ratio: 316.79 / 485;
+      aspect-ratio: 316 / 485;
     }
   }
 
@@ -468,10 +510,10 @@ body {
 
 // FOOTER --------------------------------------------------------------------
 
- .footer__title {
+.footer__title {
   color: var(--darkColor);
   padding-block: 3.125rem;
   font-size: 1.625rem;
   text-align: center;
   border-block-start: 0.0625rem solid var(--darkColor);
- }
+}
